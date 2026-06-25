@@ -176,3 +176,15 @@ body {
   border: 1px solid #ccc;
   border-radius: 5px;
 }
+/* ===== ESTILOS PARA IMPRESIÓN ===== */
+@media print {
+  .sidebar {
+    display: none;
+  }
+  button {
+    display: none;
+  }
+  .main {
+    width: 100%;
+  }
+}

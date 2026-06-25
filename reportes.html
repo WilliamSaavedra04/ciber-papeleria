@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Reportes - Inversiones Jireht</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<script>
+  if (localStorage.getItem("session") !== "active") {
+    window.location.href = "login.html";
+  }
+</script>
+
+  <div class="sidebar" id="sidebar"></div>
+
+  <div class="main" id="contenidoReporte">
+    <h1>Reporte del día: <span id="fechaReporte"></span></h1>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Productos registrados</h3>
+        <p id="totalProductosReporte">0</p>
+      </div>
+      <div class="card">
+        <h3>Total ventas</h3>
+        <p id="totalVentasReporte">0</p>
+      </div>
+      <div class="card">
+        <h3>Total servicios</h3>
+        <p id="totalServiciosReporte">0</p>
+      </div>
+      <div class="card">
+        <h3>Total general</h3>
+        <p id="totalGeneralReporte">0</p>
+      </div>
+    </div>
+
+    <h2>Detalle de ventas de hoy</h2>
+    <table class="tabla">
+      <thead>
+        <tr>
+          <th>Producto</th>
+          <th>Cantidad</th>
+          <th>Precio unitario</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody id="tablaReporteVentas"></tbody>
+    </table>
+
+    <h2>Detalle de servicios de hoy</h2>
+    <table class="tabla">
+      <thead>
+        <tr>
+          <th>Servicio</th>
+          <th>Precio</th>
+        </tr>
+      </thead>
+      <tbody id="tablaReporteServicios"></tbody>
+    </table>
+
+    <button onclick="imprimirReporte()" style="margin-top:20px;">🖨️ Imprimir reporte</button>
+  </div>
+
+  <script src="js/nav.js"></script>
+  <script>
+    renderNav("reportes.html");
+  </script>
+  <script src="js/reportes.js"></script>
+
+</body>
+</html>
