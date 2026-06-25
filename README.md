@@ -6,7 +6,7 @@ Sistema web desarrollado para administrar el inventario, ventas y servicios de I
 
 El proyecto surge a partir de una entrevista realizada a la propietaria del negocio, quien manifestó dificultades para gestionar manualmente el inventario y mantener un control ordenado de los productos.
 
-## Problema Identificado
+##  Problema Identificado
 
 Actualmente el inventario se realiza manualmente, lo que provoca:
 
@@ -25,34 +25,29 @@ Desarrollar un sistema web que permita:
 - Generar reportes diarios.
 - Mejorar la organización del negocio.
 
-## Tecnologías Utilizadas
+## 🛠️ Tecnologías Utilizadas
 
 - HTML5
 - CSS3
 - JavaScript
 - LocalStorage
 
-## Módulos
+##  Módulos del Sistema
 
-### Login
-Acceso al sistema.
+* **Login:** Acceso seguro al sistema.
+* **Dashboard:** Resumen general y estadísticas del negocio.
+* **Inventario:** Gestión, control y seguimiento de productos.
+* **Ventas:** Registro y control de ventas realizadas.
+* **Servicios:** Registro de los servicios ofrecidos.
+* **Reportes:** Visualización de estadísticas y reportes diarios.
 
-### Dashboard
-Resumen general del negocio.
+##  Vista Previa del Sistema
 
-### Inventario
-Gestión de productos.
+| Módulo de Login | Panel Principal (Dashboard) |
+|:---:|:---:|
+| ![Login](img/login.png) | ![Dashboard](img/dashboard.png) |
 
-### Ventas
-Registro de ventas.
+##  Autor
 
-### Servicios
-Registro de servicios ofrecidos.
-
-### Reportes
-Visualización de estadísticas y reportes diarios.
-
-## Autor
-
-Josué
-Proyecto de Ingeniería de Software I.
+* **William Saavedra**
+* Proyecto de Ingeniería de Software I 
