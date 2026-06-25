@@ -1,0 +1,178 @@
+/* ===== RESET ===== */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  background: #f4f4f4;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+  width: 220px;
+  background: #222;
+  color: white;
+  height: 100vh;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.sidebar li:hover {
+  background: #444;
+}
+
+/* ===== MAIN ===== */
+.main {
+  flex: 1;
+  padding: 20px;
+}
+
+/* ===== CARDS DASHBOARD ===== */
+.cards {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  flex: 1;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* ===== POS SYSTEM ===== */
+.pos {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.pos input {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.pos button {
+  padding: 10px;
+  width: 100%;
+  background: #222;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.pos button:hover {
+  background: #444;
+}
+
+/* ===== LISTA DE VENTAS ===== */
+#listaVentas p {
+  margin: 5px 0;
+  padding: 5px;
+  background: #f9f9f9;
+  border-radius: 5px;
+}
+
+/* ===== TOTAL ===== */
+#total {
+  font-weight: bold;
+}
+
+/* ===== LOGIN ===== */
+.login-box {
+  background: white;
+  padding: 30px;
+  width: 300px;
+  margin: 100px auto;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.login-box input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 10px;
+  background: #222;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.login-box button:hover {
+  background: #444;
+}
+/* ===== MENÚ ACTIVO ===== */
+.sidebar li.activo {
+  background: #444;
+  font-weight: bold;
+}
+/* ===== TABLA ===== */
+.tabla {
+  width: 100%;
+  margin-top: 20px;
+  background: white;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.tabla th, .tabla td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.tabla th {
+  background: #222;
+  color: white;
+}
+
+.tabla button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+.pos select {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}

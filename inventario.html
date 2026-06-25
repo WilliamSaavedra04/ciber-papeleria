@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Inventario - Inversiones Jireht</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<script>
+  if (localStorage.getItem("session") !== "active") {
+    window.location.href = "login.html";
+  }
+</script>
+
+  <div class="sidebar" id="sidebar"></div>
+
+  <div class="main">
+    <h1>Inventario</h1>
+
+    <div class="pos">
+      <input type="text" id="nombre" placeholder="Nombre del producto">
+      <input type="number" id="precio" placeholder="Precio">
+      <input type="number" id="stock" placeholder="Stock disponible">
+      <input type="text" id="categoria" placeholder="Categoría">
+
+      <button id="btnGuardar" onclick="guardarProducto()">Agregar producto</button>
+    </div>
+
+    <table class="tabla">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Precio</th>
+          <th>Stock</th>
+          <th>Categoría</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody id="tablaProductos"></tbody>
+    </table>
+  </div>
+
+  <script src="js/nav.js"></script>
+  <script>
+    renderNav("inventario.html");
+  </script>
+  <script src="js/inventario.js"></script>
+
+</body>
+</html>

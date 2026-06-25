@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard - Inversiones Jireht</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<script>
+  if (localStorage.getItem("session") !== "active") {
+    window.location.href = "login.html";
+  }
+</script>
+
+  <div class="sidebar" id="sidebar"></div>
+
+  <div class="main">
+    <h1>Bienvenida, Xiomara 👋</h1>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Productos</h3>
+        <p id="totalProductos">0</p>
+      </div>
+      <div class="card">
+        <h3>Ventas de hoy</h3>
+        <p id="totalVentasHoy">Lps 0</p>
+      </div>
+      <div class="card">
+        <h3>Servicios de hoy</h3>
+        <p id="totalServiciosHoy">Lps 0</p>
+      </div>
+      <div class="card">
+        <h3>Total del día</h3>
+        <p id="totalGeneral">Lps 0</p>
+      </div>
+    </div>
+
+    <button onclick="logout()" style="margin-top:20px;">Cerrar sesión</button>
+  </div>
+
+  <script src="js/nav.js"></script>
+  <script>
+    renderNav("dashboard.html");
+  </script>
+  <script src="js/dashboard.js"></script>
+
+</body>
+</html>

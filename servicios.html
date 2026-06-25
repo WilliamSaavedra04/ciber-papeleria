@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Servicios - Inversiones Jireht</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<script>
+  if (localStorage.getItem("session") !== "active") {
+    window.location.href = "login.html";
+  }
+</script>
+
+  <div class="sidebar" id="sidebar"></div>
+
+  <div class="main">
+    <h1>Servicios</h1>
+
+    <div class="pos">
+      <select id="tipoServicio">
+        <option value="Impresión">Impresión</option>
+        <option value="Fotocopia">Fotocopia</option>
+        <option value="Currículum">Currículum</option>
+        <option value="Servicio secretarial">Servicio secretarial</option>
+        <option value="Tigo Money">Tigo Money</option>
+      </select>
+
+      <input type="number" id="precioServicio" placeholder="Precio">
+
+      <button onclick="registrarServicio()">Registrar servicio</button>
+    </div>
+
+    <table class="tabla">
+      <thead>
+        <tr>
+          <th>Servicio</th>
+          <th>Precio</th>
+          <th>Fecha</th>
+        </tr>
+      </thead>
+      <tbody id="tablaServicios"></tbody>
+    </table>
+
+    <h2>Total del día: Lps. <span id="totalServicios">0</span></h2>
+  </div>
+
+  <script src="js/nav.js"></script>
+  <script>
+    renderNav("servicios.html");
+  </script>
+  <script src="js/servicios.js"></script>
+
+</body>
+</html>

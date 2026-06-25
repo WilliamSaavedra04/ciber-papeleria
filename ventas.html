@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ventas - Inversiones Jireht</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<script>
+  if (localStorage.getItem("session") !== "active") {
+    window.location.href = "login.html";
+  }
+</script>
+
+  <div class="sidebar" id="sidebar"></div>
+
+  <div class="main">
+    <h1>Registro de Ventas</h1>
+
+    <div class="pos">
+      <h3>Agregar producto al pedido</h3>
+      <select id="productoVenta"></select>
+      <input type="number" id="cantidad" placeholder="Cantidad">
+      <button onclick="agregarAlCarrito()">Agregar al pedido</button>
+    </div>
+
+    <table class="tabla">
+      <thead>
+        <tr>
+          <th>Producto</th>
+          <th>Cantidad</th>
+          <th>Precio unit.</th>
+          <th>Subtotal</th>
+          <th>Quitar</th>
+        </tr>
+      </thead>
+      <tbody id="carritoBody"></tbody>
+    </table>
+
+    <h2>Total del pedido: Lps. <span id="totalCarrito">0</span></h2>
+
+    <div class="pos">
+      <h3>Cobrar</h3>
+      <input type="number" id="pagaCon" placeholder="¿Con cuánto paga el cliente?">
+      <button onclick="calcularCambio()">Calcular cambio</button>
+      <button onclick="confirmarCobro()">Confirmar cobro</button>
+      <p id="resultadoCambio"></p>
+    </div>
+
+    <h2>Historial de ventas de hoy</h2>
+    <table class="tabla">
+      <thead>
+        <tr>
+          <th>Producto</th>
+          <th>Cantidad</th>
+          <th>Precio unitario</th>
+          <th>Total</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody id="historialVentas"></tbody>
+    </table>
+    <h3>Total vendido hoy: Lps. <span id="totalHistorial">0</span></h3>
+  </div>
+
+  <script src="js/nav.js"></script>
+  <script>
+    renderNav("ventas.html");
+  </script>
+  <script src="js/ventas.js"></script>
+
+</body>
+</html>

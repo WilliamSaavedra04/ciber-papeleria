@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - Inversiones Jireht</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="login-box">
+    <h2>Inversiones Jireht</h2>
+    <p>Iniciar sesión</p>
+
+    <input type="text" id="user" placeholder="Usuario">
+    <input type="password" id="pass" placeholder="Contraseña" onkeypress="if(event.key === 'Enter') login()">
+
+    <button onclick="login()">Entrar</button>
+
+    <p id="error"></p>
+  </div>
+
+  <script src="js/auth.js"></script>
+
+</body>
+</html>
